@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="img/icon.png">
+<link rel="stylesheet" type="text/css" href="css/formulario.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inscripciones</title>
+
+<center><h2>Registrate en tu curso de inglés</h2> </center>
+<center><img id="IMG1" src="img/logoEL.PNG"/> </center>
+<form id="registrationForm">
+    <label for="nom">Nombres y Apellidos:</label>
+    <input type="text" id="nom" placeholder="Escribe tus nombres y apellidos" required>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" placeholder="Escribe tu edad" required>
+
+    <label for="correo">Correo:</label>
+    <input type="text" id="correo" placeholder="Escribe tu correo electrónico" required>
+
+    <label for="genero">Género: </label>
+    <select id="genero">
+        <option value="Masculino">Masculino</option>
+        <option value="Femenino">Femenino</option>
+    </select>
+
+    <label for="curso">Nivel:</label>
+    <input type="text" id="curso" placeholder="Escribe tu nivel de inglés" required>
+
+    <label for="opinion">Comentarios:</label>
+    <input type="text" id="opini" placeholder="Escribe tus comentarios" required>
+
+    <button type="submit">Registrarse</button>
+</form>
+
+<section>
+    <button onclick="window.location.href='index2.html'">Regresar</button>
+</section>
+
+
+<script> alert("¡Bienvenido a English Lab! Esperamos que disfrutes este curso y aprendas a dominar el inglés con nuestras clases interactivas, centradas en un vocabulario realista que te permitirá comunicarte fluidamente en tus viajes a EE.UU. ¡Tus comentarios y sugerencias para mejorar juntos son siempre bienvenidos!");</script>
+<script>
+document.getElementById("registrationForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+    
+    var nom = document.getElementById("nom").value;
+    var edad = document.getElementById("edad").value;
+    var correo = document.getElementById("correo").value;
+    var genero = document.getElementById("genero").value; 
+    var curso = document.getElementById("curso").value; 
+    var opini = document.getElementById("opini").value; 
+    
+
+    
+    if (edad < 16) {
+        alert("La edad para inscribirte debe ser mínimo de 16 años.");
+        return;
+    }
+
+    
+    alert("¡Ahora eres miembro de Englis Lab!\n\nNombre: " + nom + "\nEdad: " + edad + "\nCorreo: " + correo + "\nGénero: " + genero + "\nGrado/Curso: " + curso);
+});
+
+</script>
+
+</body>
+</html>

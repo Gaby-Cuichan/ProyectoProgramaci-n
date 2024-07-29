@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background: linear-gradient(to right, #222224, #222224);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header img {
+    max-height: 80px;
+    margin-left: 30px;
+    order: -1;
+}
+
+nav {
+    background-color: #222224;
+    padding: 10px 0;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+
+section {
+    text-align: center;
+    margin: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.mission-vision {
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    color: #555;
+}
+
+.location {
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    color: #555;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.contact-info {
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    color: #555;
+}
+
+.social-media {
+    margin-bottom: 40px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: #222224;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+}
